@@ -1,0 +1,28 @@
+﻿<Window x:Class="Apoteka.Forme.frmRecept"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Apoteka.Forme"
+        mc:Ignorable="d"
+        Title="Dodaj/Izmeni recept" Height="175" Width="300">
+    <Grid Background="#d0dfe7">
+        <Label Content="Kupac" HorizontalAlignment="Left" Margin="30,20,0,0" VerticalAlignment="Top"/>
+        <Label Content="Proizvod" HorizontalAlignment="Left" Margin="30,50,0,0" VerticalAlignment="Top"/>
+
+        <ComboBox x:Name="cbKupac" HorizontalAlignment="Left" Margin="100,20,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="kupac" SelectedValuePath="KupacID"/>
+        <Button x:Name="btnDodajKupca" Content="Add" HorizontalAlignment="Left" Margin="230,20,0,0" Width="40" VerticalAlignment="Top" 
+                                       Foreground="#234e98" Background="FloralWhite" BorderBrush="#234e98" BorderThickness="1" Click="btnDodajKupca_Click" />
+
+        <ComboBox x:Name="cbProizvod" HorizontalAlignment="Left" Margin="100,50,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="NazivProizvoda" 
+                                      SelectedValuePath="ProizvodID"/>
+        <Button x:Name="btnDodajProizvod" Content="Add" HorizontalAlignment="Left" Margin="230,50,0,0" Width="40" VerticalAlignment="Top" 
+                                          Foreground="#234e98" Background="FloralWhite" BorderBrush="#234e98" BorderThickness="1" Click="btnDodajProizvod_Click" />
+
+        <Button x:Name="btnSacuvaj" Content="Sačuvaj" HorizontalAlignment="Left" Margin="45,105,0,0" Width="75" VerticalAlignment="Top" 
+                                    Foreground="#234e98" Background="FloralWhite" BorderBrush="#234e98" BorderThickness="1" Click="btnSacuvaj_Click" IsDefault="True" />
+        <Button x:Name="btnOtkazi" Content="Otkaži" HorizontalAlignment="Left" Margin="160,105,0,0" Width="75" VerticalAlignment="Top" 
+                                   Foreground="#234e98" Background="FloralWhite" BorderBrush="#234e98" BorderThickness="1" Click="btnOtkazi_Click"/>
+
+    </Grid>
+</Window>

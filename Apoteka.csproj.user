@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Forme\frmDobavljac.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Forme\frmKorisnik.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Forme\frmKupac.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Forme\frmLoyaltyKartica.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Forme\frmPozicija.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Forme\frmProizvod.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Forme\frmProizvodRacun.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Forme\frmRacun.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Forme\frmRecept.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Forme\frmSastojak.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Forme\frmSastojakProizvod.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Login.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Forme\frmDobavljac.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Forme\frmKorisnik.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Forme\frmKupac.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Forme\frmLoyaltyKartica.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Forme\frmPozicija.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Forme\frmProizvod.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Forme\frmProizvodRacun.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Forme\frmRacun.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Forme\frmRecept.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Forme\frmSastojak.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Forme\frmSastojakProizvod.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Login.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

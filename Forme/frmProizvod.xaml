@@ -1,0 +1,37 @@
+﻿<Window x:Class="Apoteka.Forme.frmProizvod"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Apoteka.Forme"
+        mc:Ignorable="d"
+        Title="Dodaj/Izmeni proizvod" Height="350" Width="350">
+    <Grid Background="#d0dfe7">
+        <Label Content="Naziv proizvoda" HorizontalAlignment="Left" Margin="30,20,0,0" VerticalAlignment="Top"/>
+        <Label Content="Proizvođač" HorizontalAlignment="Left" Margin="30,50,0,0" VerticalAlignment="Top"/>
+        <Label Content="Cena" HorizontalAlignment="Left" Margin="30,80,0,0" VerticalAlignment="Top"/>
+        <Label Content="Rok trajanja" HorizontalAlignment="Left" Margin="30,110,0,0" VerticalAlignment="Top"/>
+        <Label Content="Tip proizvoda" HorizontalAlignment="Left" Margin="30,140,0,0" VerticalAlignment="Top"/>
+        <Label Content="Recept" HorizontalAlignment="Left" Margin="30,170,0,0" VerticalAlignment="Top"/>
+        <Label Content="Količina na stanju" HorizontalAlignment="Left" Margin="30,200,0,0" VerticalAlignment="Top"/>
+        <Label Content="Dobavljač" HorizontalAlignment="Left" Margin="30,230,0,0" VerticalAlignment="Top"/>
+
+
+        <TextBox x:Name="txtNazivProizvoda" HorizontalAlignment="Left" Margin="150,20,0,0" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtProizvodjacProizvoda" HorizontalAlignment="Left" Margin="150,50,0,0" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtCenaProizvoda" HorizontalAlignment="Left" Margin="150,80,0,0" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <DatePicker x:Name="dpRokTrajanja" HorizontalAlignment="Left" Margin="150,110,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtTipProizvoda" HorizontalAlignment="Left" Margin="150,140,0,0" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <CheckBox x:Name="cbxRecept" Content="" HorizontalAlignment="Left" Margin="160,175,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtKolicinaNaStanju" HorizontalAlignment="Left" Margin="150,200,0,0" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="cbDobavljac" HorizontalAlignment="Left" Margin="150,230,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="NazivDobavljaca" SelectedValuePath="DobavljacID"/>
+        <Button x:Name="btnDodajDobavljaca" Content="Add" HorizontalAlignment="Left" Margin="280,230,0,0" Width="40" VerticalAlignment="Top" 
+                                            Foreground="#234e98" Background="FloralWhite" BorderBrush="#234e98" BorderThickness="1" Click="btnDodajDobavljaca_Click"/>
+
+
+        <Button x:Name="btnSacuvaj" Content="Sačuvaj" HorizontalAlignment="Left" Margin="100,275,0,0" Width="75" VerticalAlignment="Top" 
+                                    Foreground="#234e98" Background="FloralWhite" BorderBrush="#234e98" BorderThickness="1" Click="btnSacuvaj_Click" IsDefault="True" />
+        <Button x:Name="btnOtkazi" Content="Otkaži" HorizontalAlignment="Left" Margin="200,275,0,0" Width="75" VerticalAlignment="Top" 
+                                   Foreground="#234e98" Background="FloralWhite" BorderBrush="#234e98" BorderThickness="1" Click="btnOtkazi_Click" />
+    </Grid>
+</Window>
